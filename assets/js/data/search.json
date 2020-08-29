@@ -1,1 +1,1 @@
-[ ]
+[ { "title": "Kali Linux Setup using VirtualBox", "url": "/general/setup/kali.html", "categories": "Setup, Kali", "tags": "kali", "date": "2020-08-29 09:16:20 +0530", "snippet": "This quick guide is for setting up Kali Linux using VirtualBox and would workout to be independent of the Host Operating System ie. Windows, Linux, MacOSJargonHost: The physical hardware running the Virtual Machine is generally referred to as the host Guest: Virtual machine emulated on the host i..." } ]
