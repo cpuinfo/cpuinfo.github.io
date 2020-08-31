@@ -2,4 +2,4 @@ User-agent: *
 
 Disallow: /norobots/
 
-Sitemap: https://cpuinfo.github.io//cpuinfo/sitemap.xml
+Sitemap: https://cpuinfo.github.io//sitemap.xml
