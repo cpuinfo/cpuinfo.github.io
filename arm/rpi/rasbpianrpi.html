@@ -29,7 +29,7 @@
 <div id="main"> <!-- Fixed kramdown code highlight rendering: https://github.com/penibelst/jekyll-compress-html/issues/101 https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901 --><div class="row">
 <div id="post-wrapper" class="col-12 col-lg-11 col-xl-8"><div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
 <h1 data-toc-skip>How to install Raspberry Pi OS (Rasbpian) on Raspberry PI 4?</h1>
-<div class="post-meta text-muted d-flex flex-column"><div> Posted <!-- Date format snippet v2.4.1 https://github.com/cotes2020/jekyll-theme-chirpy © 2020 Cotes Chung MIT License --> <span class="timeago " data-toggle="tooltip" data-placement="bottom" title="Fri, Jul 16, 2021, 11:25 PM +0530"> Jul 16 <i class="unloaded">2021-07-16T23:25:25+05:30</i> </span> by <span class="author"> CPU Info </span> ( 1 minutes to read )</div></div>
+<div class="post-meta text-muted d-flex flex-column"><div> Posted <!-- Date format snippet v2.4.1 https://github.com/cotes2020/jekyll-theme-chirpy © 2020 Cotes Chung MIT License --> <span class="timeago " data-toggle="tooltip" data-placement="bottom" title="Fri, Jul 16, 2021, 11:25 PM +0530"> Jul 16 <i class="unloaded">2021-07-16T23:25:25+05:30</i> </span> by <span class="author"> CPU Info </span> ( 2 minutes to read )</div></div>
 <div class="post-content">
 <h2 id="overview">Overview</h2>
 <p>There are many options of Operating Systems for Raspberry Pi. You can find the details here: <a href="https://www.raspberrypi.org/software/operating-systems/">Operating Systems Options for RPI4</a></p>
@@ -46,11 +46,11 @@
 <p>The OS we are going to install is as follow:</p>
 <ul><li><strong>RPIOS LITE - 32-bit</strong></li></ul>
 <h4 id="rpi-imager">rpi-imager</h4>
-<p>https://github.com/raspberrypi/rpi-imager</p>
-<ul><li>Tip: Ctrl+Shift+x</li></ul>
-<p><a href="https://www.youtube.com/watch?v=ntaXWS8Lk34">45 seconds official video</a></p>
+<p><code class="language-plaintext highlighter-rouge">rpi-imager</code> is the most simplest way to install any variant of the operating system on RPI4. You can download the tool from the following URL: <a href="https://github.com/raspberrypi/rpi-imager">rpi-imager</a></p>
+<blockquote><p>Tip: The shortcut to customize some of the parameters in rpi-imager is <code class="language-plaintext highlighter-rouge">Ctrl+Shift+x</code></p></blockquote>
+<p>Here is a official video using <code class="language-plaintext highlighter-rouge">rpi-imager</code>. <a href="https://www.youtube.com/watch?v=ntaXWS8Lk34">45 seconds official video</a></p>
 <h2 id="enable-ssh">Enable SSH</h2>
-<p>In SDCard <code class="language-plaintext highlighter-rouge">/boot</code> partition create a file with name <code class="language-plaintext highlighter-rouge">ssh</code></p>
+<p>To enable SSH, in SDCard <code class="language-plaintext highlighter-rouge">/boot</code> partition create a file with name <code class="language-plaintext highlighter-rouge">ssh</code> using the following command:</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr>
 <td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td>
@@ -58,7 +58,7 @@
 </pre></td>
 </tr></tbody></table></code></div></div>
 <h2 id="setup-wifi">Setup WiFi</h2>
-<p><img class="emoji" title=":penguin:" alt=":penguin:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f427.png" height="20" width="20"> Filename: <code class="language-plaintext highlighter-rouge">wpa_supplicant.conf</code> in the<code class="language-plaintext highlighter-rouge">boot</code> partition</p>
+<p>In order to enable RPI4 to connect to the WiFi access point follow the steps provided below: <img class="emoji" title=":penguin:" alt=":penguin:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f427.png" height="20" width="20"> Filename: <code class="language-plaintext highlighter-rouge">wpa_supplicant.conf</code> in the<code class="language-plaintext highlighter-rouge">boot</code> partition</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr>
 <td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -77,6 +77,7 @@
 <span class="o">}</span>
 </pre></td>
 </tr></tbody></table></code></div></div>
+<blockquote><p>Tip: Make sure you provide your <code class="language-plaintext highlighter-rouge">ssid</code> and <code class="language-plaintext highlighter-rouge">psk</code> in the configuration above. <code class="language-plaintext highlighter-rouge">psk</code> is the password of your access point.</p></blockquote>
 <h2 id="login">Login</h2>
 <table>
 <thead><tr><th>Default Credentials</th></tr></thead>
