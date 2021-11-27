@@ -11,7 +11,7 @@ git submodule update <span class="nt">--recursive</span>
 ./configure
 make
 </pre></table></code></div></div><p>💡 Tip: Setting env variables.. eg. PATH</p><div class="language-bash highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre><td class="rouge-code"><pre><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/mahi/desd/work/qemu/qemu/build
+</pre><td class="rouge-code"><pre><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/qemu/qemu/build
 </pre></table></code></div></div><h2 id="kernel">Kernel</h2><p>Source code</p><p>https://github.com/raspberrypi/linux/</p><p>Pre-built binary</p><p>https://github.com/dhruvvyas90/qemu-rpi-kernel</p><ul><li>kernel-qemu-3.10.25-wheezy</li><li>kernel-qemu-4.14.79-stretch</li><li><strong>kernel-qemu-4.19.50-buster</strong></li><li>kernel-qemu-4.4.34-jessie</li></ul><h2 id="device-tree-binary">Device Tree Binary</h2><p>https://github.com/dhruvvyas90/qemu-rpi-kernel/raw/master/versatile-pb.dtb</p><ul><li><strong>versatile-pb.dtb</strong></li></ul><h2 id="root-file-system">Root File System</h2><p>http://downloads.raspberrypi.org/raspbian/images/</p><ul><li><strong>2020-02-13-raspbian-buster.zip</strong></li></ul><h2 id="steps-for-emulation">Steps for Emulation</h2><div class="language-bash highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
